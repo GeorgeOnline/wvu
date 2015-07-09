@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="../reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="../reveal.js/css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js/css/theme/solarized.css" id="theme">
 
     <style media="screen">
       .reveal { font-size: 3em; }
@@ -56,7 +56,125 @@
         </section>
 
         <section>
-          <p>I'm going to do what I do: hit some theory, and build some things.</p>
+          <p>I'm going to do what I do: hit some unusual theory, and build some things.</p>
+        </section>
+
+        <section>
+          <ul>
+            <li><b>What should we value, and why?</b></li>
+            <li class="fragment">
+              What <b>don’t</b> you hear as being associated with accessibility
+              (or compatibility) problems?
+            </li>
+            <li class="fragment">Where is stability to be found with digital technology?</li>
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <b>Look backwards:</b> What would a time-traveling computer user from the 1970s
+            recognize today?
+          </p>
+        </section>
+
+        <section>
+          <ul>
+            <li>Plain text (ASCII, now a subset of Unicode)</li>
+            <li class="fragment">
+              C-derived languages (that’s most of them)
+            </li>
+            <li class="fragment">
+              SGML-derived markup languages (HTML &amp; friends)
+            </li>
+            <li class="fragment">
+              Unix (now standardized as POSIX) operating systems (Linux, BSD -&gt; Darwin/OS X; also
+              Android and iOS...basically everything BUT Windows)
+            </li>
+            <li class="fragment">
+              Standards and specifications, such as from the IETF, e.g.,
+              <a href="https://tools.ietf.org/rfc/rfc20.txt">RFC 20: ASCII format for Network Interchange</a> (1969)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Values of Unix Culture</h2>
+        </section>
+
+        <section>
+          <p>Eric S. Raymond, <cite><a href="http://www.catb.org/esr/writings/taoup/html/">The Art of Unix Programming</a></cite> (1999-2003; esp. <a href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html">Chapter 6: Basics of Unix Philosophy</a>)</p>
+        </section>
+
+        <section>
+          <h2>Unix Philosophy: <br />Four Basic Themes</h2>
+        </section>
+
+        <section>
+          <ol>
+            <li><b>Autonomy</b>: Modularity (1), Composition (3), Separation (4)</li>
+            <li class="fragment"><b>Robustness</b> (8), comprised of:
+              <ul>
+                <li>Transparency (7): Representation (9), Repair (12)</li>
+                <li>Simplicity (5): Clarity (2), Parsimony (6), Least Surprise (10), Silence (11)</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <ol start="3">
+            <li><b>Time</b>: Economy (13), Generation (14), Optimization (15), 17 Extensibility</li>
+            <li class="fragment"><b>Diversity</b> (16): ‘Distrust all claims for “one true way”.’</li>
+          </ol>
+        </section>
+
+        <section>
+          <p>
+            <b>Autonomy</b>: “Unix tradition strongly encourages writing programs that read and
+            write simple, textual, stream-oriented, device-independent formats.”
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <b>Robustness</b>: “...software is transparent when you can look at it and immediately
+            see what is going on. It is simple when what is going on is uncomplicated enough for a
+            human brain to reason about all the potential cases without strain.”
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <b>Time</b>: “A prematurely optimized portion of a design frequently interferes with
+            changes that would have much higher payoffs across the whole design, so you end up with
+            both inferior performance and excessively complex code.”
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <b>Diversity</b>: “multiple languages, open extensible systems, and customization hooks
+            everywhere”
+          </p>
+        </section>
+
+        <section>
+          <h2>So what does this look like in 2015?</h2>
+        </section>
+
+        <section>
+          <h2>My Development Stack</h2>
+          <ol>
+            <li>Plain-text editors (no IDEs)</li>
+            <li>Command-line w/ package manager (limited GUI interactions)</li>
+            <li>Version control (Git)</li>
+            <li>Web browsers</li>
+            <li>Documentation and specifications</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Let’s actually do some stuff.</h2>
         </section>
 
       <!-- /.slides -->
@@ -83,7 +201,7 @@
 
         multiplex: {
           secret: null,
-          id: 'e6068a2dfaf4c6e1', // id, obtained from socket.io server
+          id: '004f350d05dd699d', // id, obtained from socket.io server
           url: 'ksrevealjs.jit.su:80' // Location of socket.io server
         },
 
